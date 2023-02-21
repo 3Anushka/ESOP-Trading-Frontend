@@ -6,10 +6,11 @@
 </head>
 <body>
 <form>
-  <label for="username">UserName</label><br>
-  <input type="text" name="username" id="username" placeholder="Enter UserName"><br><br>
-  <button type="button" onClick="createOrder()">Create Order</button>
-  <button type="button" onClick="orderHistory()">Order History</button>
+    <label for="username">UserName</label><br>
+    <input type="text" name="username" id="username" placeholder="Enter UserName"><br><br>
+    <br><br>
+    <button type="button" onClick="createOrder()">Create Order</button>
+    <button type="button" onClick="orderHistory()">Order History</button>
 </form>
 <script>
     function createOrder(){
@@ -19,6 +20,8 @@
     function orderHistory(){
     window.location.href = "http://localhost:5500/html/OrderHistory.html"
     }
+
+
 
 </script>
 </body>
