@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Create Order</title>
+    <link rel="stylesheet" href="../css/CreateOrder.css">
 </head>
 <body>
+<div class="center">
+<h1>Create Order</h1>
 <form id="myForm">
-    <label for="quantity">Quantity</label>
-    <input id="quantity" name="quantity" value="10">
-    <br>
-    <label for="type">Type</label>
-    <input type="text" id="type" name="type">
-    <br>
-    <label for="price">Price</label>
-    <input id="price" name="price" value="10">
-    <br>
-    <input id="postSubmit" type="submit" value="Send Me!">
+    <label for="username">Username</label><br>
+    <input id="username" name="username" placeholder="Enter Username">
+    <br><br>
+    <label for="quantity">Quantity</label><br>
+    <input id="quantity" name="quantity" placeholder="Enter Quantity">
+    <br><br>
+    <label for="type">Type</label><br>
+    <select id="type" name="type" style="width:150px; height:23px">
+        <option type="Buy">Buy</option>
+        <option type="Sell">Sell</option>
+    </select>
+    <br><br>
+    <label for="price">Price</label><br>
+    <input id="price" name="price" placeholder="Enter Price">
+    <br><br>
+    <input id="postSubmit" type="submit" value="Create Order"><br><br>
 </form>
+</div>
+<h3 id ="message"></h3>
         <script src="../js/CreateOrder.js"></script>
 </body>
 </html>
